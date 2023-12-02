@@ -79,7 +79,7 @@ WHERE id IN (24556,99716)
 -- Looking for all the women that went 3 times to the concert
 
 SELECT person.name, fbevent.*
-FROM facebook_event_checkin fbevent, person person, drivers_license driver
-ON fbevent.person_id = person.id AND
-   person.license_id = driver.id
+FROM  person person
+INNER JOIN facebook_event_checkin fbevent ON fbevent.person_id = person.id 
+INNER JOIN drivers_license driver ON person.license_id = driver.id
 WHERE person.license_id IN (202298,291182,918773)
