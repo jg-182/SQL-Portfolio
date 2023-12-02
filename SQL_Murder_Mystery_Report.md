@@ -179,9 +179,9 @@ We know that Jeremy was hired by a woman who's around **65''-67''** tall. She al
 Let's find out all the women who went 3 times to the SQL Symphony Concert.
 
     SELECT person.name, fbevent.*
-    FROM facebook_event_checkin fbevent, person person, drivers_license driver
-    ON fbevent.person_id = person.id AND
-       person.license_id = driver.id
+    FROM  person person
+    INNER JOIN facebook_event_checkin fbevent ON fbevent.person_id = person.id 
+    INNER JOIN drivers_license driver ON person.license_id = driver.id
     WHERE person.license_id IN (202298,291182,918773)
 
 
