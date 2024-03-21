@@ -1,4 +1,4 @@
--- Name of the Dataset: Superstore Dataset
+-- Name of the Dataset: Student Stress Factors: A Comprehensive Analysis
 -- Source: https://www.kaggle.com/datasets/rxnach/student-stress-factors-a-comprehensive-analysis/data
 
 SELECT *
