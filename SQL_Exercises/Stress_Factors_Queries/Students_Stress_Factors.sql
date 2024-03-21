@@ -1,3 +1,6 @@
+-- Name of the Dataset: Superstore Dataset
+-- Source: https://www.kaggle.com/datasets/rxnach/student-stress-factors-a-comprehensive-analysis/data
+
 SELECT *
 FROM StressLevelDataset
 
